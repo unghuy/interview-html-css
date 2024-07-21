@@ -1,10 +1,10 @@
-$(document).ready(function() {
+$(document).ready(function () {
   $('.svg-inline--fa').hover(
-      function() {
-          $(this).addClass('fa-beat');
-      }, function() {
-          $(this).removeClass('fa-beat');
-      }
+    function () {
+      $(this).addClass('fa-beat');
+    }, function () {
+      $(this).removeClass('fa-beat');
+    }
   );
 });
 
@@ -19,5 +19,14 @@ $(document).ready(function () {
         window.location.hash = hash;
       });
     }
+  });
+});
+
+$(document).ready(function () {
+  const toggleButton = $('.menu-toggle');
+  const nav = $('.nav');
+
+  toggleButton.on('click', function () {
+    nav.toggleClass('active');
   });
 });
