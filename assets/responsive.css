@@ -1,8 +1,174 @@
 @media screen and (max-width: 1440px) {
   .container {
-    margin: 0 100px;
+    margin: 0 60px;
   }
+
   .journal-item .journal-inner {
     margin: 0 100px;
   }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    text-align: center;
+  }
+
+  .banner-title {
+    font-size: 100px;
+  }
+
+  .banner-slogan {
+    font-size: 16px;
+  }
+
+  .navbar {
+    margin: 0 50px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(40, 40, 40);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+
+  .nav-link {
+    margin: 20px auto;
+  }
+
+  .nav-link::after {
+    bottom: -7px;
+  }
+
+  .social {
+    margin-top: 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 3;
+  }
+
+  .nav.active {
+    height: 675px;
+    max-height: 675px;
+  }
+
+  .heading-title::after {
+    font-size: 180px;
+  }
+
+  .about-title p {
+    font-size: 25px;
+  }
+
+  .features {
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .features {
+    gap: 20px;
+  }
+
+  .feature {
+    flex: 0 0 48%;
+  }
+
+  .journal .grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+  .journal-item img {
+    display: none;
+  }
+
+  .journal-item .journal-inner {
+    margin: 100px;
+  }
+
+  .blog-content .text-title {
+    font-size: 21px;
+    margin-bottom: 50px;
+  }
+
+  .blog .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sub-content {
+    flex-wrap: wrap;
+    padding: 50px 0;
+    gap: 40px;
+  }
+
+  .sub-item {
+    flex: 0 0 100%;
+  }
+
+  .sub-description {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container, .navbar {
+    margin: 0 20px;
+  }
+
+  .journal-item .journal-inner {
+    margin: 20px;
+  }
+
+  .banner-title {
+    font-size: 65px;
+  }
+
+  .banner-slogan {
+    font-size: 13px;
+  }
+
+  .about-title p {
+    font-size: 18px;
+  }
+
+  .features {
+    gap: 50px;
+  }
+
+  .feature {
+    flex: 1 1 100%;
+  }
+  .feature-title {
+    margin-bottom: 20px;
+  }
+
+  .feature-description p {
+    text-align: center;
+  }
+
+  .heading-title {
+    margin-bottom: 80px;
+  }
+
+  .blog-content .text-title {
+    font-size: 15px;
+  }
+
+  .blog .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+}
 }
