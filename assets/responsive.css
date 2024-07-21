@@ -1,0 +1,8 @@
+@media screen and (max-width: 1440px) {
+  .container {
+    margin: 0 100px;
+  }
+  .journal-item .journal-inner {
+    margin: 0 100px;
+  }
+}
