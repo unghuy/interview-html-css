@@ -204,7 +204,7 @@ p {
 .btn-scroll::after {
   content: '';
   position: absolute;
-  right: 26px;
+  left: 28px;
   bottom: -40px;
   width: 12px;
   height: 12px;
